@@ -1,34 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+参考 DEMO adding-products-to-cart-commercejs.netlify.app
 
-## Getting Started
+7.1、功能涵盖
+● 类型选择支持 Small, Medium, Large
+● 将产品添加到购物车的过程
+● 确保给购物车更新通知给用户
+● 列出已添加到购物车中的项目
+● 添加一个按钮来清空整个购物车
+● 在购物车内增加/减少数量的能力
 
-First, run the development server:
+7.2、技术要求
+● 使用 VS Code 编辑器
+● 使用 Next.js 框架
+● 使用 Ant Design UI 库
+● 运用所学的 React 知识——特别是 JSX、Props、事件绑定等
+● 使用 React Hooks——特别是 useState()， useEffect()， useContext()等
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+【开发中遇到的问题】 1.开发者模式下，点击 1 次，开始正常+1，后来会+2，目前好像又正常，serve 模式下也是正常的
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.setState 一开始无法更新嵌套对象，目前已解决。先修改后返回新对象。setState 是异步，正常顺序打印拿到的是之前的数据
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3.Object.entries(嵌套对象) 使用出现了问题

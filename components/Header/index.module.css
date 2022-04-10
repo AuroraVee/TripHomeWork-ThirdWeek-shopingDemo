@@ -1,0 +1,36 @@
+.outer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 300px;
+  margin-right: 50px;
+}
+
+/* .icon {
+  color: white;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.button {
+  font-size: large;
+} */
+
+.icon {
+  margin-right: 10px;
+  font-size: large;
+}
+
+.button {
+  font-size: large;
+  color: white;
+}

@@ -1,0 +1,10 @@
+.outer{
+    display:flex;
+    justify-content: space-around;
+}
+
+.inner{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    gap: 10px;
+}
